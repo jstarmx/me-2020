@@ -10,7 +10,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "lint": "eslint ./src --ext .js,.svelte"
+    "lint": "eslint ./ --ext .js,.svelte"
   },
   "husky": {
     "hooks": {
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "marked": "^0.8.0",
     "polka": "next",
     "sirv": "^0.4.0"
   },
