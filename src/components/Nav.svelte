@@ -3,64 +3,63 @@
 </script>
 
 <style>
-    nav {
-        border-bottom: 1px solid rgba(255, 62, 0, 0.1);
-        font-weight: 300;
-        padding: 0 1em;
-    }
-
     ul {
+        align-items: center;
+        display: flex;
+        font-size: 1.2em;
+        justify-content: space-between;
+        list-style: none;
         margin: 0;
         padding: 0;
     }
 
-    /* clearfix */
-    ul::after {
-        content: '';
+    li a {
+        color: white;
+        border-radius: 0.1em;
         display: block;
-        clear: both;
-    }
-
-    li {
-        display: block;
-        float: left;
-    }
-
-    .selected {
-        position: relative;
-        display: inline-block;
-    }
-
-    .selected::after {
-        position: absolute;
-        content: '';
-        width: calc(100% - 1em);
-        height: 2px;
-        background-color: rgb(255, 62, 0);
-        display: block;
-        bottom: -1px;
-    }
-
-    a {
+        margin: 0 0.25em;
+        padding: 0.25em 0.5em;
         text-decoration: none;
-        padding: 1em 0.5em;
-        display: block;
+    }
+
+    li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .active {
+        background-color: white !important;
+        cursor: default;
+        font-weight: 300;
+    }
+
+    .nav--dev .active {
+        color: var(--burning_sky_dark);
+    }
+
+    .nav--design .active {
+        color: var(--lagoon_dark);
+    }
+
+    .nav--shoot .active {
+        color: var(--rainforest_dark);
+    }
+
+    .nav--paint .active {
+        color: var(--sunflower_dark);
     }
 </style>
 
-<nav>
-    <ul>
-        <li>
-            <a class:selected={segment === undefined} href=".">home</a>
-        </li>
-        <li>
-            <a class:selected={segment === 'about'} href="about">about</a>
-        </li>
-
-        <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-        <li>
-            <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
-        </li>
-    </ul>
-</nav>
+<ul class="nav {segment ? `nav--${segment}` : ''}">
+    <li>
+        <a rel="prefetch" class:active={segment === 'dev'} href="/dev">dev</a>
+    </li>
+    <li>
+        <a rel="prefetch" class:active={segment === 'design'} href="/design">design</a>
+    </li>
+    <li>
+        <a rel="prefetch" class:active={segment === 'shoot'} href="/shoot">shoot</a>
+    </li>
+    <li>
+        <a rel="prefetch" class:active={segment === 'paint'} href="/paint">paint</a>
+    </li>
+</ul>
