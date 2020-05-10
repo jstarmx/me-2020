@@ -1,5 +1,5 @@
 {
-    "extends": ["airbnb-base", "plugin:cypress/recommended"],
+    "extends": ["airbnb-base", "plugin:cypress/recommended", "prettier"],
     "env": {
         "browser": true,
         "cypress/globals": true,
@@ -14,6 +14,7 @@
         "no-restricted-globals": "off",
         "no-underscore-dangle": "off"
     },
+    "plugins": ["cypress", "import", "prettier"],
     "overrides": [
         {
             "files": ["*.svelte"],
@@ -21,14 +22,6 @@
             "plugins": ["svelte3"],
             "rules": {
                 "import/no-mutable-exports": "off"
-            }
-        },
-        {
-            "files": ["*.js"],
-            "plugins": ["import", "prettier", "cypress"],
-            "extends": ["prettier"],
-            "rules": {
-                "prettier/prettier": "error"
             }
         }
     ]

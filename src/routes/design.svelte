@@ -1,5 +1,5 @@
 <script>
-    import { lightbox } from '../stores.js';
+    import { lightbox } from '../stores';
 
     const setLightbox = event => {
         event.preventDefault();

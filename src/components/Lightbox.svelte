@@ -1,9 +1,9 @@
 <script>
-    import { lightbox } from '../stores.js';
+    import { lightbox } from '../stores';
 
     let imageSource;
 
-    const unsubscribe = lightbox.subscribe(value => {
+    lightbox.subscribe(value => {
         imageSource = value;
     });
 
@@ -22,6 +22,7 @@
         width: 100%;
         z-index: 100;
     }
+
     .image {
         border: 0.5em solid white;
         bottom: 0;
@@ -43,6 +44,7 @@
         right: 0.5em;
         top: 0.5em;
     }
+
     .close:hover {
         opacity: 1;
     }
