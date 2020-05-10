@@ -3,4 +3,4 @@ https://www.james-starkie.co.uk/* https://www.jstar.mx/:splat 301!
 https://james-starkie.co.uk/* https://www.jstar.mx/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-# https://sleepy-jennings-661cdd.netlify.com/* https://www.jstar.mx/:splat 301!
+https://naughty-rosalind-850656.netlify.app/* https://www.jstar.mx/:splat 301!
