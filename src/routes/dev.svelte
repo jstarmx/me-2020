@@ -52,57 +52,39 @@
 
     <ul>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/5bf89f1ae940f289dbe42330f529a03d74c24abc/34560/images/react.svg"
-                alt="" />
+            <img src="/images/tech-icons/react.svg" alt="" />
             React
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/625a455b8a667d7e1c53019963a50ee52936f9e5/9017f/images/jest.svg"
-                alt="" />
+            <img src="/images/tech-icons/jest.svg" alt="" />
             Jest
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/e64896d3e8c823444bd1c0ca5c3ec71ff1aa312f/eb49f/images/webpack.svg"
-                alt="" />
+            <img src="/images/tech-icons/webpack.svg" alt="" />
             Webpack
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/13307c039b1ebfd73830fdd0e9a7e77b4da0c471/eace3/images/nodejs.svg"
-                alt="" />
+            <img src="/images/tech-icons/nodejs.svg" alt="" />
             Node.js
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/174f305f90fc29effb6ce900633034ef9be85663/dba0c/images/yarn.svg"
-                alt="" />
+            <img src="/images/tech-icons/yarn.svg" alt="" />
             Yarn
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/5acd27309b38ca8b81716c25caebf1e77d2c0181/4e483/images/git.svg"
-                alt="" />
+            <img src="/images/tech-icons/git.svg" alt="" />
             Git
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/74e057640fc0c20c789a3b4f09f3b7d2a108b181/8c04b/images/html5.svg"
-                alt="" />
+            <img src="/images/tech-icons/html5.svg" alt="" />
             HTML5
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/1fe2e70bff6aa014bcb0b54af538e04584306bac/064c6/images/sass.svg"
-                alt="" />
+            <img src="/images/tech-icons/sass.svg" alt="" />
             Sass
         </li>
         <li>
-            <img
-                src="https://d33wubrfki0l68.cloudfront.net/f1a70f77bb29c4ad892cbfcfa3afc107af21659f/1a4ef/images/ruby.svg"
-                alt="" />
+            <img src="/images/tech-icons/ruby.svg" alt="" />
             Ruby
         </li>
     </ul>
