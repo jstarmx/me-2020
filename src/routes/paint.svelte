@@ -1,3 +1,12 @@
+<script>
+    import { lightbox } from '../stores.js';
+
+    const setLightbox = event => {
+        event.preventDefault();
+        lightbox.set(event.target.href);
+    };
+</script>
+
 <style>
     div {
         margin-top: 2em;
@@ -57,6 +66,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/paint/mother.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/paint/mother.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -65,6 +75,7 @@
             </li>
             <li style="background-image:url('/images/galleries/paint/robot.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/paint/robot.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -72,22 +83,38 @@
                 </a>
             </li>
             <li style="background-image:url('/images/galleries/paint/ld1.jpg');">
-                <a href="/images/galleries/paint/ld1.jpg" rel="noopener noreferrer" target="_blank">
+                <a
+                    on:click={setLightbox}
+                    href="/images/galleries/paint/ld1.jpg"
+                    rel="noopener noreferrer"
+                    target="_blank">
                     <span>Life &amp; Decay 1</span>
                 </a>
             </li>
             <li style="background-image:url('/images/galleries/paint/ld2.jpg');">
-                <a href="/images/galleries/paint/ld2.jpg" rel="noopener noreferrer" target="_blank">
+                <a
+                    on:click={setLightbox}
+                    href="/images/galleries/paint/ld2.jpg"
+                    rel="noopener noreferrer"
+                    target="_blank">
                     <span>Life &amp; Decay 2</span>
                 </a>
             </li>
             <li style="background-image:url('/images/galleries/paint/ld3.jpg');">
-                <a href="/images/galleries/paint/ld3.jpg" rel="noopener noreferrer" target="_blank">
+                <a
+                    on:click={setLightbox}
+                    href="/images/galleries/paint/ld3.jpg"
+                    rel="noopener noreferrer"
+                    target="_blank">
                     <span>Life &amp; Decay 3</span>
                 </a>
             </li>
             <li style="background-image:url('/images/galleries/paint/ld4.jpg');">
-                <a href="/images/galleries/paint/ld4.jpg" rel="noopener noreferrer" target="_blank">
+                <a
+                    on:click={setLightbox}
+                    href="/images/galleries/paint/ld4.jpg"
+                    rel="noopener noreferrer"
+                    target="_blank">
                     <span>Life &amp; Decay 4</span>
                 </a>
             </li>

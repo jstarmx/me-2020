@@ -1,4 +1,5 @@
 <script>
+    import Lightbox from '../components/Lightbox.svelte';
     import Nav from '../components/Nav.svelte';
     import SocialLinks from '../components/SocialLinks.svelte';
 
@@ -113,4 +114,5 @@
     <footer>
         <SocialLinks />
     </footer>
+    <Lightbox />
 </div>

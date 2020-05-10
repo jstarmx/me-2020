@@ -1,3 +1,12 @@
+<script>
+    import { lightbox } from '../stores.js';
+
+    const setLightbox = event => {
+        event.preventDefault();
+        lightbox.set(event.target.href);
+    };
+</script>
+
 <style>
     div {
         margin-top: 2em;
@@ -71,6 +80,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/omex1-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/omex1.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -79,6 +89,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/omex2-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/omex2.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -92,6 +103,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/zencreate1.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/zencreate1.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -100,6 +112,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/zencreate3.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/zencreate3.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -108,6 +121,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/zencreate4.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/zencreate4.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -121,6 +135,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/jump1-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/jump1.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -129,6 +144,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/jump2-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/jump2.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -142,6 +158,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/barton1.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/barton1.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -150,6 +167,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/barton2.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/barton2.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -158,6 +176,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/barton3.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/barton3.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -171,6 +190,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/ella1-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/ella1.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -179,6 +199,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/ella2-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/ella2.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -192,6 +213,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/burston-sm.jpg');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/burston.jpg"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -205,6 +227,7 @@
         <ul>
             <li style="background-image:url('/images/galleries/design/rsfc1-sm.png');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/rsfc1.png"
                     rel="noopener noreferrer"
                     target="_blank">
@@ -213,6 +236,7 @@
             </li>
             <li style="background-image:url('/images/galleries/design/rsfc2-sm.png');">
                 <a
+                    on:click={setLightbox}
                     href="/images/galleries/design/rsfc2.png"
                     rel="noopener noreferrer"
                     target="_blank">
