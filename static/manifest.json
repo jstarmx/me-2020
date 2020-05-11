@@ -1,8 +1,8 @@
 {
-    "background_color": "#ffffff",
-    "theme_color": "#333333",
-    "name": "TODO",
-    "short_name": "TODO",
+    "background_color": "#d4224f",
+    "theme_color": "#ffffff",
+    "name": "james starkie",
+    "short_name": "js",
     "display": "minimal-ui",
     "start_url": "/",
     "icons": [
