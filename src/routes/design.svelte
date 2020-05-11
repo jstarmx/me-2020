@@ -78,7 +78,7 @@
     <section>
         <h2>Omex</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/omex1-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/omex1.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/omex1.jpg"
@@ -87,7 +87,7 @@
                     <span>desktop</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/omex2-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/omex2.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/omex2.jpg"
@@ -101,7 +101,7 @@
     <section>
         <h2>Agency concept</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/zencreate1.jpg');">
+            <li style="background-image:url('/images/galleries/design/zencreate1.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/zencreate1.jpg"
@@ -110,7 +110,7 @@
                     <span>homepage</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/zencreate3.jpg');">
+            <li style="background-image:url('/images/galleries/design/zencreate3.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/zencreate3.jpg"
@@ -119,7 +119,7 @@
                     <span>services</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/zencreate4.jpg');">
+            <li style="background-image:url('/images/galleries/design/zencreate4.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/zencreate4.jpg"
@@ -133,7 +133,7 @@
     <section>
         <h2>Jump Nation</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/jump1-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/jump1.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/jump1.jpg"
@@ -142,7 +142,7 @@
                     <span>homepage</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/jump2-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/jump2.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/jump2.jpg"
@@ -156,7 +156,7 @@
     <section>
         <h2>Barton Kendal</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/barton1.jpg');">
+            <li style="background-image:url('/images/galleries/design/barton1.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/barton1.jpg"
@@ -165,7 +165,7 @@
                     <span>homepage</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/barton2.jpg');">
+            <li style="background-image:url('/images/galleries/design/barton2.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/barton2.jpg"
@@ -174,7 +174,7 @@
                     <span>house detail</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/barton3.jpg');">
+            <li style="background-image:url('/images/galleries/design/barton3.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/barton3.jpg"
@@ -188,7 +188,7 @@
     <section>
         <h2>Ella &amp; Me</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/ella1-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/ella1.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/ella1.jpg"
@@ -197,7 +197,7 @@
                     <span>desktop</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/ella2-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/ella2.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/ella2.jpg"
@@ -211,7 +211,7 @@
     <section>
         <h2>Burston Garden Centre</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/burston-sm.jpg');">
+            <li style="background-image:url('/images/galleries/design/burston.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/burston.jpg"
@@ -225,7 +225,7 @@
     <section>
         <h2>Rochdale Sixth Form College</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/rsfc1-sm.png');">
+            <li style="background-image:url('/images/galleries/design/rsfc1.png');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/rsfc1.png"
@@ -234,7 +234,7 @@
                     <span>homepage</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/rsfc2-sm.png');">
+            <li style="background-image:url('/images/galleries/design/rsfc2.png');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/rsfc2.png"
