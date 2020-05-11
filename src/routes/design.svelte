@@ -225,7 +225,7 @@
     <section>
         <h2>Rochdale Sixth Form College</h2>
         <ul>
-            <li style="background-image:url('/images/galleries/design/rsfc1.png');">
+            <li style="background-image:url('/images/galleries/design/rsfc1.png?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/rsfc1.png"
@@ -234,7 +234,7 @@
                     <span>homepage</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/design/rsfc2.png');">
+            <li style="background-image:url('/images/galleries/design/rsfc2.png?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/design/rsfc2.png"
