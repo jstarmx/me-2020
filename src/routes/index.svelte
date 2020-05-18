@@ -22,4 +22,5 @@
         <br />
         liverpool / uk
     </p>
+    <a href="/blog">Blog</a>
 </div>

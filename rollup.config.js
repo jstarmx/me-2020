@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
+import json from '@rollup/plugin-json';
 import svelte from 'rollup-plugin-svelte';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
@@ -14,7 +15,7 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const onwarn = (warning, warn) =>
     (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
     warn(warning);
-const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
+const dedupe = (importee) => importee === 'svelte' || importee.startsWith('svelte/');
 
 export default {
     client: {
@@ -30,6 +31,7 @@ export default {
                 hydratable: true,
                 emitCss: true,
             }),
+            json(),
             resolve({
                 browser: true,
                 dedupe,
@@ -81,6 +83,7 @@ export default {
                 generate: 'ssr',
                 dev,
             }),
+            json(),
             resolve({
                 dedupe,
             }),
