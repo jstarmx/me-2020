@@ -3,7 +3,7 @@
 
     let imageSource;
 
-    lightbox.subscribe(value => {
+    lightbox.subscribe((value) => {
         imageSource = value;
     });
 

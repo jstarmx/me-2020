@@ -1,8 +1,8 @@
 <script context="module">
     export function preload() {
         return this.fetch('blog.json')
-            .then(r => r.json())
-            .then(posts => ({ posts }));
+            .then((r) => r.json())
+            .then((posts) => ({ posts }));
     }
 </script>
 
@@ -42,8 +42,13 @@
 <div>
     {#each posts as post}
         <h2>
-            <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+            <a rel="prefetch" href="blog/{post.slug}">
+                {#if post.wip}[WIP]{/if}
+                {post.title}
+            </a>
         </h2>
-        <p>{@html post.intro}</p>
+        <p>
+            {@html post.intro}
+        </p>
     {/each}
 </div>

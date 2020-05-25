@@ -1,7 +1,7 @@
 import posts from './_posts';
 
 const lookup = new Map();
-posts.forEach(post => {
+posts.forEach((post) => {
     lookup.set(post.slug, JSON.stringify(post));
 });
 

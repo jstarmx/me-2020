@@ -1,11 +1,12 @@
 import posts from './_posts';
 
 const contents = JSON.stringify(
-    posts.map(({ title, slug, intro }) => {
+    posts.map(({ title, slug, intro, wip }) => {
         return {
             title,
             slug,
             intro,
+            wip,
         };
     }),
 );

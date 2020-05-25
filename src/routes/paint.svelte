@@ -1,7 +1,7 @@
 <script>
     import { lightbox } from '../stores';
 
-    const setLightbox = event => {
+    const setLightbox = (event) => {
         event.preventDefault();
         lightbox.set(event.target.href);
     };
@@ -64,7 +64,8 @@
 <div>
     <section>
         <ul>
-            <li style="background-image:url('/images/galleries/paint/mother.jpg?nf_resize=fit&w=500');">
+            <li
+                style="background-image:url('/images/galleries/paint/mother.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/mother.jpg"
@@ -73,7 +74,8 @@
                     <span>Mother</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/paint/robot.jpg?nf_resize=fit&w=500');">
+            <li
+                style="background-image:url('/images/galleries/paint/robot.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/robot.jpg"
@@ -82,7 +84,8 @@
                     <span>Robot in a Cemetery of Wrecks</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/paint/ld1.jpg?nf_resize=fit&w=500');">
+            <li
+                style="background-image:url('/images/galleries/paint/ld1.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld1.jpg"
@@ -91,7 +94,8 @@
                     <span>Life &amp; Decay 1</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/paint/ld2.jpg?nf_resize=fit&w=500');">
+            <li
+                style="background-image:url('/images/galleries/paint/ld2.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld2.jpg"
@@ -100,7 +104,8 @@
                     <span>Life &amp; Decay 2</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/paint/ld3.jpg?nf_resize=fit&w=500');">
+            <li
+                style="background-image:url('/images/galleries/paint/ld3.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld3.jpg"
@@ -109,7 +114,8 @@
                     <span>Life &amp; Decay 3</span>
                 </a>
             </li>
-            <li style="background-image:url('/images/galleries/paint/ld4.jpg?nf_resize=fit&w=500');">
+            <li
+                style="background-image:url('/images/galleries/paint/ld4.jpg?nf_resize=fit&w=500');">
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld4.jpg"
