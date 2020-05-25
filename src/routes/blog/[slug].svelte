@@ -17,38 +17,42 @@
 </script>
 
 <style>
-    /*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-    .content :global(h2) {
+    h1 {
+        font-size: 3em;
+        font-weight: 100;
+        line-height: 1.1em;
+        margin-top: 0;
+    }
+
+    .blog {
+        margin: 0 auto;
+        max-width: 45em;
+    }
+
+    .blog :global(a) {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 0 0.25em;
+    }
+
+    .blog :global(a:hover) {
+        color: var(--burning_sky_dark);
+        background-color: white;
+    }
+
+    .blog :global(h2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
         font-size: 1.4em;
         font-weight: 500;
     }
 
-    .content :global(pre) {
-        background-color: #f9f9f9;
-        box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-        padding: 0.5em;
-        border-radius: 2px;
-        overflow-x: auto;
+    .blog :global(img) {
+        border: 8px solid rgba(255, 255, 255, 0.15);
+        max-width: 100%;
     }
 
-    .content :global(pre) :global(code) {
-        background-color: transparent;
-        padding: 0;
-    }
-
-    .content :global(ul) {
-        line-height: 1.5;
-    }
-
-    .content :global(li) {
-        margin: 0 0 0.5em 0;
+    .blog :global(hr) {
+        display: none;
     }
 </style>
 
@@ -56,8 +60,8 @@
     <title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<div class="blog">
+    <h1>{post.title}</h1>
 
-<div class="content">
     {@html post.html}
 </div>

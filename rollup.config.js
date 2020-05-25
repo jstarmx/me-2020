@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import json from '@rollup/plugin-json';
+import markdown from '@jackfranklin/rollup-plugin-markdown';
 import svelte from 'rollup-plugin-svelte';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
@@ -31,7 +32,6 @@ export default {
                 hydratable: true,
                 emitCss: true,
             }),
-            json(),
             resolve({
                 browser: true,
                 dedupe,
@@ -84,6 +84,7 @@ export default {
                 dev,
             }),
             json(),
+            markdown(),
             resolve({
                 dedupe,
             }),

@@ -28,8 +28,11 @@
 
     .active {
         background-color: white !important;
-        cursor: default;
         font-weight: 300;
+    }
+
+    .nav--blog .active {
+        color: var(--neon_passion_light);
     }
 
     .nav--dev .active {
@@ -50,6 +53,9 @@
 </style>
 
 <ul class="nav {segment ? `nav--${segment}` : ''}">
+    <li>
+        <a rel="prefetch" class:active={segment === 'blog'} href="/blog">blog</a>
+    </li>
     <li>
         <a rel="prefetch" class:active={segment === 'dev'} href="/dev">dev</a>
     </li>
