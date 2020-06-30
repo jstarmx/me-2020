@@ -32,7 +32,11 @@
     .blog :global(a) {
         color: white;
         background-color: rgba(255, 255, 255, 0.15);
+        border-bottom: 0.1em solid rgba(255, 255, 255, 0.5);
+        border-radius: 0.1em;
+        font-weight: bolder;
         padding: 0 0.25em;
+        text-decoration: none;
     }
 
     .blog :global(a:hover) {
@@ -42,17 +46,53 @@
 
     .blog :global(h2) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-        font-size: 1.4em;
-        font-weight: 500;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.3em;
     }
 
     .blog :global(img) {
-        border: 8px solid rgba(255, 255, 255, 0.15);
+        border: 0.5em solid rgba(255, 255, 255, 0.15);
         max-width: 100%;
     }
 
     .blog :global(hr) {
         display: none;
+    }
+
+    .blog :global(pre) {
+        background-color: #212227;
+        border-radius: 0.2em;
+        background-clip: padding-box;
+        color: #abb2bf;
+        margin: 2em 0;
+        padding: 1.5em 2em;
+        overflow-x: auto;
+    }
+
+    .blog :global(code) {
+        background-color: rgba(0,0,0,0.15);
+        border-radius: 0.2em;
+        font-family: 'Roboto Mono', monospace;
+        padding: 0 0.25em;
+    }
+
+    .blog :global(pre code) {
+        background: none;
+    }
+
+    .blog :global(aside) {
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        margin: 2em 0 2em 3em;
+        padding-left: 1em;
+    }
+
+    .blog :global(blockquote) {
+        border-left: 0.5em solid rgba(0,0,0,0.25);
+        margin: 2em 0;
+        padding: 0.25em 1em 0.25em 2em;
+        font-style: italic;
+        background-color: rgba(0,0,0,0.1);
     }
 </style>
 

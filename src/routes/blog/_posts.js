@@ -1,6 +1,17 @@
 import fs from 'fs';
 import path from 'path';
 import marked from 'marked';
+import hljs from 'highlight.js/lib/core';
+import xml from 'highlight.js/lib/languages/xml';
+
+hljs.registerLanguage('xml', xml);
+
+marked.setOptions({
+    highlight: (code, language) => {
+        const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+        return hljs.highlight(validLanguage, code).value;
+    },
+});
 
 const { NODE_ENV } = process.env;
 

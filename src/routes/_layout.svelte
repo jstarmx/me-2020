@@ -30,7 +30,7 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         height: 100%;
-        line-height: 1.6;
+        line-height: 1.8;
     }
 
     .container--dev {
@@ -55,6 +55,7 @@
 
     @media (min-width: 40em) {
         .container {
+            font-size: 1.15em;
             letter-spacing: 0.05em;
         }
     }
