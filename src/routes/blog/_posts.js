@@ -3,8 +3,10 @@ import path from 'path';
 import marked from 'marked';
 import hljs from 'highlight.js/lib/core';
 import xml from 'highlight.js/lib/languages/xml';
+import javascript from 'highlight.js/lib/languages/javascript';
 
 hljs.registerLanguage('xml', xml);
+hljs.registerLanguage('javascript', javascript);
 
 marked.setOptions({
     highlight: (code, language) => {

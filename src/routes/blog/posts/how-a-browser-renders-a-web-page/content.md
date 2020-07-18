@@ -1,10 +1,10 @@
 My thinking: if I'm going to build websites that are fast and reliable, I need to really understand the mechanics of each step a browser goes through to render a web page, so that each can be considered and optimised during development. This post is a summary of my learnings of the end-to-end process at a fairly high level.
 
+---
+
 A lot of this is based on the fantastic (and FREE!) [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884) course by [Ilya Grigorik](https://twitter.com/igrigorik) and [Cameron Pittman](https://twitter.com/cwpittman) on [Udacity](https://www.udacity.com/). I'd highly recommend checking it out.
 
 Also very helpful was the article [How Browsers Work: Behind the scenes of modern web browsers](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/) by [Paul Irish](https://twitter.com/paul_irish) and [Tali Garsiel](http://taligarsiel.com/). It's from 2011 but many of the fundamentals of how browsers work remain relevant at the time of writing this blog post.
-
----
 
 First, some lingo.
 
@@ -35,7 +35,7 @@ The first step of this parsing process is to break down the HTML into **tokens**
 
 When the parser comes across an external resource like a CSS or Javascript file, it goes off to fetch those files. The parser will continue as a CSS file is being loaded, although it will **block rendering** until it has been loaded and parsed (more on that in a bit).
 
-Javascript files are a little different - they are blocking by default, meaning that the **parsing of the HTML will pause** whilst the Javascript file is loaded and parsed. There are two attributes that can be added to script tags to mitigate this: `defer` and `async`. Both allow the parser to continue whilst the JavaScript file is loaded in the background, but they operate in different ways.
+Javascript files are a little different - by default they **block parsing** of the HTML whilst the Javascript file is loaded and then parsed. There are two attributes that can be added to script tags to mitigate this: `defer` and `async`. Both allow the parser to continue whilst the JavaScript file is loaded in the background, but they operate in different ways in the way that they execute. More on that in a bit, but in summary:
 
 `defer` means that the execution of the file will be delayed until the parsing of the document is complete. If multiple files have the defer attribute, they will be executed in the order that they were discovered in the HTML.
 
@@ -71,16 +71,46 @@ You may well have heard of the [DOM](https://developer.mozilla.org/en-US/docs/We
 >
 > The CSSOM, together with the DOM, to build the render tree, which is in turn used by the browser to layout and paint the web page.
 
-Similar to HTML files and the DOM, when CSS files are loaded they must be parsed and converted to a tree - this time the CSSOM. Where it differs to the DOM is that it cannot be built incrementally due to the way that CSS rules can overwrite each other at various different points. **This is why CSS blocks rendering**, as until all CSS is parsed and the CSSOM built, the browser can't know where and how to position each element on the screen.
+Similar to HTML files and the DOM, when CSS files are loaded they must be parsed and converted to a tree - this time the CSSOM. It describes all of the CSS selectors on the page, their heirarchy and their properties.
+
+Where the CSSOM differs to the DOM is that it cannot be built incrementally, as CSS rules can overwrite each other at various different points due to [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). **This is why CSS blocks rendering**, as until all CSS is parsed and the CSSOM built, the browser can't know where and how to position each element on the screen.
 
 ## 4. Execute the Javascript
 
-How and when the Javascript is loaded will determine exactly when this happens, but at some point it will be parsed and executed. Different browsers have different Javascript engines to perform this task. This can be an expensive process in terms of a computer's resources, hence why optimising Javascript is really important for performance. Once synchronously loaded Javascript and the DOM are complete, the document.DOMContentLoaded event will be emitted. After everything else like async Javascript, images etc. have loaded then the window.load event is fired.
+How and when the Javascript resources are loaded will determine exactly when this happens, but at some point they will be parsed, compiled and executed. Different browsers have different Javascript engines to perform this task. [Parsing Javascript can be an expensive process in terms of a computer's resources](https://medium.com/reloading/javascript-start-up-performance-69200f43b201), moreso than other types of resource, hence why optimising it is so important in achieving good performance.
+
+<aside>
+
+### Load events
+
+Once synchronously loaded Javascript and the DOM are fully parsed and ready, the [document.DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event) event will be emitted. For any scripts that require access to the DOM, for example to manipulate it in some way or listen for user interaction events, it is good practice to first wait for this event before executing the scripts.
+
+```javascript
+document.addEventListener('DOMContentLoaded', (event) => {
+    // You can now safely access the DOM
+});
+```
+
+After everything else like async Javascript, images etc. have finished loading then the [window.load](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event) event is fired.
+
+```javascript
+window.addEventListener('load', (event) => {
+    // The page has now fully loaded
+});
+```
+
+</aside>
 
 ## 5. Merge DOM and CSSOM to construct the render tree
 
-Like Javascript engines, different browsers have different rendering engines. They are used to visualise the render tree, which is a combination of the DOM and CSSOM that represents everything that will be visible on the page. This does not necessarily mean things that will be visually present, for example elements with styles of opacity:0 or visibility:hidden will be included in the render tree, and may still be read by a screen reader etc., whereas those set to display:none will not be. Additionally, tags such as `<head>` that do not contain any visual information will be omitted.
+The [render tree](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction) is a combination of the DOM and CSSOM, and represents everything that will be rendered onto the page. That does not necessarily mean all nodes in the render tree will be **visually present**, for example nodes with styles of `opacity: 0` or `visibility: hidden` will be included, and may still be read by a screen reader etc., whereas those set to `display: none` will not be included. Additionally, tags such as `<head>` that do not contain any visual information will always be omitted.
+
+As with JavaScript engines, different browsers have different [rendering engines](https://en.wikipedia.org/wiki/Comparison_of_browser_engines).
 
 ## 6. Calculate layout and paint
 
-At this point the browser knows what to render but not where to render it, so its layout, i.e. position and size, must be calculated. The renderer traverses the render tree, working out the coordinates at which each node should be located. Once that is complete, the final step is to take that information and paint the pixels to the screen.
+Now that we have a complete render tree the browser knows _what_ to render but not _where_ to render it. Therefore the layout of the page (i.e. every node's position and size) must be calculated. The rendering engine traverses the render tree, starting at the top and working down, calculating the coordinates at which each node should be displayed.
+
+Once that is complete, the final step is to take that layout information and **paint** the pixels to the screen.
+
+And voila! After all that, we have a **fully rendered web page!**

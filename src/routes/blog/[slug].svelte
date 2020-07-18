@@ -32,11 +32,7 @@
     .blog :global(a) {
         color: white;
         background-color: rgba(255, 255, 255, 0.15);
-        border-bottom: 0.1em solid rgba(255, 255, 255, 0.5);
-        border-radius: 0.1em;
-        font-weight: bolder;
         padding: 0 0.25em;
-        text-decoration: none;
     }
 
     .blog :global(a:hover) {
