@@ -23,7 +23,11 @@ When the browser begins to receive the HTML data of a page over the network, it 
 
 The first step of this parsing process is to break down the HTML into **tokens** that represent **start tags**, **end tags**, and their **contents**. From that it can construct the DOM.
 
-![](/images/blog/how-a-browser-renders-a-web-page/Step%201.png?nf_resize=fit&w=900)
+<picture>
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%201.webp" type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%201.png" type="image/png"> 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/Step%201.png" alt="Alt Text!">
+</picture>
 
 ## 2. Fetch external resources
 
@@ -55,7 +59,11 @@ As an aside, modern browsers will continue to scan the HTML whilst blocked and '
 
 </aside>
 
-![](/images/blog/how-a-browser-renders-a-web-page/Step%202.png?nf_resize=fit&w=900)
+<picture>
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%202.webp" type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%202.png" type="image/png"> 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/Step%202.png" alt="Alt Text!">
+</picture>
 
 ## 3. Parse the CSS and build the CSSOM
 
@@ -69,7 +77,11 @@ Similar to HTML files and the DOM, when CSS files are loaded they must be parsed
 
 Where the CSSOM differs to the DOM is that it cannot be built incrementally, as CSS rules can overwrite each other at various different points due to [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). **This is why CSS blocks rendering**, as until all CSS is parsed and the CSSOM built, the browser can't know where and how to position each element on the screen.
 
-![](/images/blog/how-a-browser-renders-a-web-page/Step%203.png?nf_resize=fit&w=900)
+<picture>
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%203.webp" type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%203.png" type="image/png"> 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/Step%203.png" alt="Alt Text!">
+</picture>
 
 ## 4. Execute the JavaScript
 
@@ -97,7 +109,11 @@ window.addEventListener('load', (event) => {
 
 </aside>
 
-![](/images/blog/how-a-browser-renders-a-web-page/Step%204.png?nf_resize=fit&w=900)
+<picture>
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%204.webp" type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%204.png" type="image/png"> 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/Step%204.png" alt="Alt Text!">
+</picture>
 
 ## 5. Merge DOM and CSSOM to construct the render tree
 
@@ -105,7 +121,11 @@ The [render tree](https://developers.google.com/web/fundamentals/performance/cri
 
 As with JavaScript engines, different browsers have different [rendering engines](https://en.wikipedia.org/wiki/Comparison_of_browser_engines).
 
-![](/images/blog/how-a-browser-renders-a-web-page/Step%205.png?nf_resize=fit&w=900)
+<picture>
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%205.webp" type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%205.png" type="image/png"> 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/Step%205.png" alt="Alt Text!">
+</picture>
 
 ## 6. Calculate layout and paint
 
@@ -115,4 +135,8 @@ Once that is complete, the final step is to take that layout information and **p
 
 And voila! After all that, we have a **fully rendered web page!**
 
-![](/images/blog/how-a-browser-renders-a-web-page/Step%206.png?nf_resize=fit&w=900)
+<picture>
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%206.webp" type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/Step%206.png" type="image/png"> 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/Step%206.png" alt="Alt Text!">
+</picture>

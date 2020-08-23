@@ -1,2 +1,1 @@
 static/images/galleries/** filter=lfs diff=lfs merge=lfs -text
-static/images/blog/** filter=lfs diff=lfs merge=lfs -text
