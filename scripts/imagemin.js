@@ -4,7 +4,10 @@ const path = require('path');
 const imagemin = require('imagemin');
 const webp = require('imagemin-webp');
 
-const dir = path.resolve(__dirname, '../static/images/blog/how-a-browser-renders-a-web-page');
+const dir = path.resolve(
+    __dirname,
+    '../__sapper__/export/images/blog/how-a-browser-renders-a-web-page',
+);
 
 (async () => {
     try {
