@@ -56,6 +56,26 @@
         display: none;
     }
 
+    .blog :global(aside) {
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        margin: 2em 0;
+        padding-left: 1em;
+    }
+
+    @media (min-width: 40em) {
+        .blog :global(aside) {
+            margin-left: 3em;
+        }
+    }
+
+    .blog :global(blockquote) {
+        border-left: 0.5em solid rgba(0, 0, 0, 0.25);
+        margin: 2em 0;
+        padding: 0.25em 1em 0.25em 2em;
+        font-style: italic;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
     .blog :global(pre) {
         background-color: #212227;
         border-radius: 0.2em;
@@ -67,7 +87,7 @@
     }
 
     .blog :global(code) {
-        background-color: rgba(0,0,0,0.15);
+        background-color: rgba(0, 0, 0, 0.15);
         border-radius: 0.2em;
         font-family: 'Roboto Mono', monospace;
         padding: 0 0.25em;
@@ -77,18 +97,63 @@
         background: none;
     }
 
-    .blog :global(aside) {
-        border-left: 1px solid rgba(255, 255, 255, 0.15);
-        margin: 2em 0 2em 3em;
-        padding-left: 1em;
+    .blog :global(.hljs-comment) {
+        color: #8e88de;
     }
 
-    .blog :global(blockquote) {
-        border-left: 0.5em solid rgba(0,0,0,0.25);
-        margin: 2em 0;
-        padding: 0.25em 1em 0.25em 2em;
+    .blog :global(.hljs) {
+        display: block;
+        overflow-x: auto;
+        padding: 0.5em;
+        color: #adaeb0;
+        background: #282c34;
+    }
+
+    .blog :global(.hljs-comment, .hljs-quote) {
+        color: #727071;
         font-style: italic;
-        background-color: rgba(0,0,0,0.1);
+    }
+
+    .blog :global(.hljs-doctag, .hljs-formula, .hljs-keyword) {
+        color: #c678dd;
+    }
+
+    .blog :global(.hljs-deletion, .hljs-name, .hljs-section, .hljs-selector-tag, .hljs-subst) {
+        color: #f46c68;
+    }
+
+    .blog :global(.hljs-literal) {
+        color: #56b6c2;
+    }
+
+    .blog :global(.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string) {
+        color: #58d0c8;
+    }
+
+    .blog :global(.hljs-built_in, .hljs-class .hljs-title) {
+        color: #c19951;
+    }
+
+    .blog
+        :global(.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable) {
+        color: #d19a66;
+    }
+
+    .blog
+        :global(.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hljs-title) {
+        color: #61aeee;
+    }
+
+    .blog :global(.hljs-emphasis) {
+        font-style: italic;
+    }
+
+    .blog :global(.hljs-strong) {
+        font-weight: 700;
+    }
+
+    .blog :global(.hljs-link) {
+        text-decoration: underline;
     }
 </style>
 

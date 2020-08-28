@@ -8,6 +8,6 @@ body {
 }
 
 #sapper {
-    display: grid;
+    display: flex;
     min-height: 100%;
 }

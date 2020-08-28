@@ -29,8 +29,9 @@
         flex-direction: column;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        height: 100%;
+        flex-grow: 1;
         line-height: 1.8;
+        max-width: 100%;
     }
 
     .container--dev {

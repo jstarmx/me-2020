@@ -19,7 +19,7 @@
     h2 {
         font-size: 2em;
         font-weight: 100;
-        line-height: 1.2;
+        line-height: 1.7;
         margin: 0.5em 0;
     }
 
