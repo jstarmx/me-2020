@@ -97,10 +97,6 @@
         background: none;
     }
 
-    .blog :global(.hljs-comment) {
-        color: #8e88de;
-    }
-
     .blog :global(.hljs) {
         display: block;
         overflow-x: auto;
@@ -110,7 +106,7 @@
     }
 
     .blog :global(.hljs-comment, .hljs-quote) {
-        color: #727071;
+        color: #8aa1cc;
         font-style: italic;
     }
 
