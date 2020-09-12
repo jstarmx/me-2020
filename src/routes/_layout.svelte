@@ -11,14 +11,14 @@
         /* Colours */
         --neon_passion_light: #d4224f;
         --neon_passion_dark: #91186b;
-        --burning_sky_light: #db510a;
+        --burning_sky_light: #d04701;
         --burning_sky_dark: #a40b0b;
-        --rainforest_light: #b3da48;
-        --rainforest_dark: #388827;
-        --lagoon_light: #1aa0d1;
-        --lagoon_dark: #284e98;
-        --sunflower_light: #efc440;
-        --sunflower_dark: #f78c1c;
+        --rainforest_light: #627f14;
+        --rainforest_dark: #0d4a00;
+        --twilight_light: #0c6fa6;
+        --twilight_dark: #344890;
+        --lagoon_light: #00837c;
+        --lagoon_dark: #00454e;
     }
 
     .container {
@@ -40,18 +40,18 @@
     }
 
     .container--design {
-        background: var(--lagoon_dark);
-        background: linear-gradient(120deg, var(--lagoon_light), var(--lagoon_dark));
-    }
-
-    .container--shoot {
         background: var(--rainforest_dark);
         background: linear-gradient(120deg, var(--rainforest_light), var(--rainforest_dark));
     }
 
+    .container--shoot {
+        background: var(--lagoon_dark);
+        background: linear-gradient(120deg, var(--lagoon_light), var(--lagoon_dark));
+    }
+
     .container--paint {
-        background: var(--sunflower_dark);
-        background: linear-gradient(120deg, var(--sunflower_light), var(--sunflower_dark));
+        background: var(--twilight_dark);
+        background: linear-gradient(120deg, var(--twilight_light), var(--twilight_dark));
     }
 
     @media (min-width: 40em) {

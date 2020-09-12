@@ -40,15 +40,15 @@
     }
 
     .nav--design .active {
-        color: var(--lagoon_dark);
-    }
-
-    .nav--shoot .active {
         color: var(--rainforest_dark);
     }
 
+    .nav--shoot .active {
+        color: var(--lagoon_dark);
+    }
+
     .nav--paint .active {
-        color: var(--sunflower_dark);
+        color: var(--twilight_dark);
     }
 </style>
 
