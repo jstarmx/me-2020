@@ -22,27 +22,27 @@
 
 <ul>
     <li>
-        <a href="https://github.com/jstarmx" target="_blank">
+        <a href="https://github.com/jstarmx" target="_blank" rel="noopener noreferrer">
             <img class="social__icon" src="/images/social-icons/github.svg" alt="Github" />
         </a>
     </li>
     <li>
-        <a href="https://twitter.com/jstarmx" target="_blank">
+        <a href="https://twitter.com/jstarmx" target="_blank" rel="noopener noreferrer">
             <img class="social__icon" src="/images/social-icons/twitter.svg" alt="Twitter" />
         </a>
     </li>
     <li>
-        <a href="https://vimeo.com/jstarmx" target="_blank">
+        <a href="https://vimeo.com/jstarmx" target="_blank" rel="noopener noreferrer">
             <img class="social__icon" src="/images/social-icons/vimeo.svg" alt="Vimeo" />
         </a>
     </li>
     <li>
-        <a href="https://instagram.com/jstarmx" target="_blank">
+        <a href="https://instagram.com/jstarmx" target="_blank" rel="noopener noreferrer">
             <img class="social__icon" src="/images/social-icons/instagram.svg" alt="Instagram" />
         </a>
     </li>
     <li>
-        <a href="https://linkedin.com/in/jstarmx" target="_blank">
+        <a href="https://linkedin.com/in/jstarmx" target="_blank" rel="noopener noreferrer">
             <img class="social__icon" src="/images/social-icons/linkedin.svg" alt="LinkedIn" />
         </a>
     </li>
