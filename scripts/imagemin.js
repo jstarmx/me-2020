@@ -6,7 +6,7 @@ const webp = require('imagemin-webp');
 
 const dir = path.resolve(
     __dirname,
-    '../__sapper__/export/images/blog/how-a-browser-renders-a-web-page',
+    '../static/images/blog/how-a-browser-renders-a-web-page',
 );
 
 (async () => {

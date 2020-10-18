@@ -24,9 +24,18 @@ When the browser begins to receive the HTML data of a page over the network, it 
 The first step of this parsing process is to break down the HTML into **tokens** that represent **start tags**, **end tags**, and their **contents**. From that it can construct the DOM.
 
 <picture>
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-1.webp" type="image/webp">
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-1.png" type="image/png"> 
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-1.png" alt="Steps involved in the parsing of HTML by a web browser">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-1-500.webp 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-1-1000.webp 1000w"
+          sizes="(max-width: 500px) 500px,
+                 1000px"
+          type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-1-500.png 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-1-1000.png 1000w"
+          sizes="(max-width: 500px) 500px,
+                 1000px"
+          type="image/png">
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-1.png" 
+       alt="Steps involved in the parsing of HTML by a web browser">
 </picture>
 
 ## 2. Fetch external resources
