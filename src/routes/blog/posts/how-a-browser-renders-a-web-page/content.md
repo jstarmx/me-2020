@@ -25,16 +25,14 @@ The first step of this parsing process is to break down the HTML into **tokens**
 
 <picture>
   <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-1-500.webp 500w,
-                  /images/blog/how-a-browser-renders-a-web-page/step-1-1000.webp 1000w"
-          sizes="(max-width: 500px) 500px,
-                 1000px"
+                  /images/blog/how-a-browser-renders-a-web-page/step-1-1000.webp 1000w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-1.webp 2480w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-1.webp 2480w"
           type="image/webp">
   <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-1-500.png 500w,
                   /images/blog/how-a-browser-renders-a-web-page/step-1-1000.png 1000w"
-          sizes="(max-width: 500px) 500px,
-                 1000px"
           type="image/png">
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-1.png" 
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-1-1000.png" 
        alt="Steps involved in the parsing of HTML by a web browser">
 </picture>
 
@@ -69,9 +67,15 @@ As an aside, modern browsers will continue to scan the HTML whilst blocked and '
 </aside>
 
 <picture>
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-2.webp" type="image/webp">
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-2.png" type="image/png"> 
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-2.png" alt="Fetching CSS and JavaScript resources in a web browser">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-2-500.webp 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-2-1000.webp 1000w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-2.webp 2480w"
+          type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-2-500.png 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-2-1000.png 1000w"
+          type="image/png">
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-2-1000.png" 
+       alt="Fetching CSS and JavaScript resources in a web browser">
 </picture>
 
 ## 3. Parse the CSS and build the CSSOM
@@ -87,9 +91,15 @@ Similar to HTML files and the DOM, when CSS files are loaded they must be parsed
 Where the CSSOM differs to the DOM is that it cannot be built incrementally, as CSS rules can overwrite each other at various different points due to [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). **This is why CSS blocks rendering**, as until all CSS is parsed and the CSSOM built, the browser can't know where and how to position each element on the screen.
 
 <picture>
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-3.webp" type="image/webp">
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-3.png" type="image/png"> 
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-3.png" alt="Parsing CSS and building the CSSOM in a web browser">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-3-500.webp 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-3-1000.webp 1000w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-3.webp 2480w"
+          type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-3-500.png 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-3-1000.png 1000w"
+          type="image/png">
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-3-1000.png" 
+       alt="Parsing CSS and building the CSSOM in a web browser">
 </picture>
 
 ## 4. Execute the JavaScript
@@ -119,9 +129,15 @@ window.addEventListener('load', (event) => {
 </aside>
 
 <picture>
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-4.webp" type="image/webp">
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-4.png" type="image/png"> 
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-4.png" alt="Timeline of executing JavaScript in a web browser">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-4-500.webp 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-4-1000.webp 1000w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-4.webp 2480w"
+          type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-4-500.png 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-4-1000.png 1000w"
+          type="image/png">
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-4-1000.png" 
+       alt="Timeline of executing JavaScript in a web browser">
 </picture>
 
 ## 5. Merge DOM and CSSOM to construct the render tree
@@ -131,9 +147,15 @@ The [render tree](https://developers.google.com/web/fundamentals/performance/cri
 As with JavaScript engines, different browsers have different [rendering engines](https://en.wikipedia.org/wiki/Comparison_of_browser_engines).
 
 <picture>
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-5.webp" type="image/webp">
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-5.png" type="image/png"> 
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-5.png" alt="Merging the DOM and CSSOM to create a render tree in a web browser">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-5-500.webp 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-5-1000.webp 1000w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-5.webp 2480w"
+          type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-5-500.png 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-5-1000.png 1000w"
+          type="image/png">
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-5-1000.png" 
+       alt="Merging the DOM and CSSOM to create a render tree in a web browser">
 </picture>
 
 ## 6. Calculate layout and paint
@@ -145,7 +167,13 @@ Once that is complete, the final step is to take that layout information and **p
 And voila! After all that, we have a **fully rendered web page!**
 
 <picture>
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-6.webp" type="image/webp">
-  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-6.png" type="image/png"> 
-  <img src="/images/blog/how-a-browser-renders-a-web-page/step-6.png" alt="Calculating the layout and paint of a web page in a browser">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-6-500.webp 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-6-1000.webp 1000w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-6.webp 2480w"
+          type="image/webp">
+  <source srcset="/images/blog/how-a-browser-renders-a-web-page/step-6-500.png 500w,
+                  /images/blog/how-a-browser-renders-a-web-page/step-6-1000.png 1000w"
+          type="image/png">
+  <img src="/images/blog/how-a-browser-renders-a-web-page/step-6-1000.png" 
+       alt="Calculating the layout and paint of a web page in a browser">
 </picture>
