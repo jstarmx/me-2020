@@ -36,7 +36,7 @@
 </style>
 
 <svelte:head>
-    <title>Blog</title>
+    <title>blog | js</title>
 </svelte:head>
 
 <div>

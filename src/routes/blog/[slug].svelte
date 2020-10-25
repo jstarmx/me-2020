@@ -154,7 +154,7 @@
 </style>
 
 <svelte:head>
-    <title>{post.title}</title>
+    <title>{post.title} | blog | js</title>
 </svelte:head>
 
 <div class="blog">
