@@ -80,13 +80,26 @@
         }
     }
 
+    a {
+        display: flex;
+    }
+
     img {
         height: 5em;
-        transition: transform 100ms linear;
+        transition: transform 100ms linear, height 200ms ease-out;
     }
 
     img:hover {
         transform: scale(1.1);
+    }
+
+    img.small {
+        height: 3.5em;
+    }
+
+    nav {
+        overflow-x: auto;
+        max-width: 100%;
     }
 
     main {
@@ -104,7 +117,7 @@
 <div class="container {segment ? `container--${segment}` : ''}">
     <header>
         <a href="/">
-            <img src="images/logo.svg" alt="Logo" />
+            <img src="images/logo.svg" alt="Logo" class={segment ? 'small' : ''} />
         </a>
         <nav>
             <Nav {segment} />
