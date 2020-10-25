@@ -177,3 +177,5 @@ And voila! After all that, we have a **fully rendered web page!**
   <img src="/images/blog/how-a-browser-renders-a-web-page/step-6-1000.png" 
        alt="Calculating the layout and paint of a web page in a browser">
 </picture>
+
+Please share, react to, or comment on this post on [dev.to](https://dev.to/jstarmx/how-the-browser-renders-a-web-page-1ahc).
