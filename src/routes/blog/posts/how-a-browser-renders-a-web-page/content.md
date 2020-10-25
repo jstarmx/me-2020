@@ -86,7 +86,7 @@ You may well have heard of the [DOM](https://developer.mozilla.org/en-US/docs/We
 >
 > The CSSOM, together with the DOM, to build the render tree, which is in turn used by the browser to layout and paint the web page.
 
-Similar to HTML files and the DOM, when CSS files are loaded they must be parsed and converted to a tree - this time the CSSOM. It describes all of the CSS selectors on the page, their heirarchy and their properties.
+Similar to HTML files and the DOM, when CSS files are loaded they must be parsed and converted to a tree - this time the CSSOM. It describes all of the CSS selectors on the page, their hierarchy and their properties.
 
 Where the CSSOM differs to the DOM is that it cannot be built incrementally, as CSS rules can overwrite each other at various different points due to [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). **This is why CSS blocks rendering**, as until all CSS is parsed and the CSSOM built, the browser can't know where and how to position each element on the screen.
 
@@ -104,7 +104,7 @@ Where the CSSOM differs to the DOM is that it cannot be built incrementally, as 
 
 ## 4. Execute the JavaScript
 
-How and when the JavaScript resources are loaded will determine exactly when this happens, but at some point they will be parsed, compiled and executed. Different browsers have different JavaScript engines to perform this task. [Parsing JavaScript can be an expensive process in terms of a computer's resources](https://medium.com/reloading/javascript-start-up-performance-69200f43b201), moreso than other types of resource, hence why optimising it is so important in achieving good performance. [Check out this fantastic post]() for a deeper dive into how the JavaScript engine works.
+How and when the JavaScript resources are loaded will determine exactly when this happens, but at some point they will be parsed, compiled and executed. Different browsers have different JavaScript engines to perform this task. [Parsing JavaScript can be an expensive process in terms of a computer's resources](https://medium.com/reloading/javascript-start-up-performance-69200f43b201), more-so than other types of resource, hence why optimising it is so important in achieving good performance. [Check out this fantastic post]() for a deeper dive into how the JavaScript engine works.
 
 <aside>
 
