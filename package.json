@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "sapper dev",
         "build": "sapper build --legacy",
-        "export": "sapper export --legacy && yarn images",
+        "export": "yarn images && sapper export --legacy",
         "images": "node scripts/imagemin.js",
         "start": "node __sapper__/build",
         "cy:run": "cypress run",
