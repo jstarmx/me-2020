@@ -104,7 +104,7 @@ Where the CSSOM differs to the DOM is that it cannot be built incrementally, as 
 
 ## 4. Execute the JavaScript
 
-How and when the JavaScript resources are loaded will determine exactly when this happens, but at some point they will be parsed, compiled and executed. Different browsers have different JavaScript engines to perform this task. [Parsing JavaScript can be an expensive process in terms of a computer's resources](https://medium.com/reloading/javascript-start-up-performance-69200f43b201), more-so than other types of resource, hence why optimising it is so important in achieving good performance. [Check out this fantastic post]() for a deeper dive into how the JavaScript engine works.
+How and when the JavaScript resources are loaded will determine exactly when this happens, but at some point they will be parsed, compiled and executed. Different browsers have different JavaScript engines to perform this task. [Parsing JavaScript can be an expensive process in terms of a computer's resources](https://medium.com/reloading/javascript-start-up-performance-69200f43b201), more-so than other types of resource, hence why optimising it is so important in achieving good performance. [Check out this fantastic post](https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf) for a deeper dive into how the JavaScript engine works.
 
 <aside>
 
