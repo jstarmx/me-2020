@@ -53,19 +53,9 @@
 </style>
 
 <ul class="nav {segment ? `nav--${segment}` : ''}">
-    <li>
-        <a rel="prefetch" class:active={segment === 'blog'} href="/blog">blog</a>
-    </li>
-    <li>
-        <a rel="prefetch" class:active={segment === 'dev'} href="/dev">dev</a>
-    </li>
-    <li>
-        <a rel="prefetch" class:active={segment === 'design'} href="/design">design</a>
-    </li>
-    <li>
-        <a rel="prefetch" class:active={segment === 'shoot'} href="/shoot">shoot</a>
-    </li>
-    <li>
-        <a rel="prefetch" class:active={segment === 'paint'} href="/paint">paint</a>
-    </li>
+    <li><a rel="prefetch" class:active={segment === 'blog'} href="/blog">blog</a></li>
+    <li><a rel="prefetch" class:active={segment === 'dev'} href="/dev">dev</a></li>
+    <li><a rel="prefetch" class:active={segment === 'design'} href="/design">design</a></li>
+    <li><a rel="prefetch" class:active={segment === 'shoot'} href="/shoot">shoot</a></li>
+    <li><a rel="prefetch" class:active={segment === 'paint'} href="/paint">paint</a></li>
 </ul>

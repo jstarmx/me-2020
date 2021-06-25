@@ -116,9 +116,7 @@
 
 <div class="container {segment ? `container--${segment}` : ''}">
     <header>
-        <a href="/">
-            <img src="images/logo.svg" alt="Logo" class={segment ? 'small' : ''} />
-        </a>
+        <a href="/"><img src="images/logo.svg" alt="Logo" class={segment ? 'small' : ''} /></a>
         <nav>
             <Nav {segment} />
         </nav>

@@ -17,9 +17,5 @@
 </svelte:head>
 <div class="home">
     <h1>james starkie</h1>
-    <p>
-        developer / filmmaker / creative
-        <br />
-        liverpool / uk
-    </p>
+    <p>developer / filmmaker / creative <br /> liverpool / uk</p>
 </div>

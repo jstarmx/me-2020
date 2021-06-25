@@ -51,41 +51,14 @@
     </p>
 
     <ul>
-        <li>
-            <img src="/images/tech-icons/react.svg" alt="" />
-            React
-        </li>
-        <li>
-            <img src="/images/tech-icons/jest.svg" alt="" />
-            Jest
-        </li>
-        <li>
-            <img src="/images/tech-icons/webpack.svg" alt="" />
-            Webpack
-        </li>
-        <li>
-            <img src="/images/tech-icons/nodejs.svg" alt="" />
-            Node.js
-        </li>
-        <li>
-            <img src="/images/tech-icons/yarn.svg" alt="" />
-            Yarn
-        </li>
-        <li>
-            <img src="/images/tech-icons/git.svg" alt="" />
-            Git
-        </li>
-        <li>
-            <img src="/images/tech-icons/html5.svg" alt="" />
-            HTML5
-        </li>
-        <li>
-            <img src="/images/tech-icons/sass.svg" alt="" />
-            Sass
-        </li>
-        <li>
-            <img src="/images/tech-icons/ruby.svg" alt="" />
-            Ruby
-        </li>
+        <li><img src="/images/tech-icons/react.svg" alt="" /> React</li>
+        <li><img src="/images/tech-icons/jest.svg" alt="" /> Jest</li>
+        <li><img src="/images/tech-icons/webpack.svg" alt="" /> Webpack</li>
+        <li><img src="/images/tech-icons/nodejs.svg" alt="" /> Node.js</li>
+        <li><img src="/images/tech-icons/yarn.svg" alt="" /> Yarn</li>
+        <li><img src="/images/tech-icons/git.svg" alt="" /> Git</li>
+        <li><img src="/images/tech-icons/html5.svg" alt="" /> HTML5</li>
+        <li><img src="/images/tech-icons/sass.svg" alt="" /> Sass</li>
+        <li><img src="/images/tech-icons/ruby.svg" alt="" /> Ruby</li>
     </ul>
 </div>

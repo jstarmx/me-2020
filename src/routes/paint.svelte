@@ -65,62 +65,74 @@
     <section>
         <ul>
             <li
-                style="background-image:url('/images/galleries/paint/mother.jpg?nf_resize=fit&w=500');">
+                style="background-image:url('/images/galleries/paint/mother.jpg?nf_resize=fit&w=500');"
+            >
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/mother.jpg"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                >
                     <span>Mother</span>
                 </a>
             </li>
             <li
-                style="background-image:url('/images/galleries/paint/robot.jpg?nf_resize=fit&w=500');">
+                style="background-image:url('/images/galleries/paint/robot.jpg?nf_resize=fit&w=500');"
+            >
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/robot.jpg"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                >
                     <span>Robot in a Cemetery of Wrecks</span>
                 </a>
             </li>
             <li
-                style="background-image:url('/images/galleries/paint/ld1.jpg?nf_resize=fit&w=500');">
+                style="background-image:url('/images/galleries/paint/ld1.jpg?nf_resize=fit&w=500');"
+            >
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld1.jpg"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                >
                     <span>Life &amp; Decay 1</span>
                 </a>
             </li>
             <li
-                style="background-image:url('/images/galleries/paint/ld2.jpg?nf_resize=fit&w=500');">
+                style="background-image:url('/images/galleries/paint/ld2.jpg?nf_resize=fit&w=500');"
+            >
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld2.jpg"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                >
                     <span>Life &amp; Decay 2</span>
                 </a>
             </li>
             <li
-                style="background-image:url('/images/galleries/paint/ld3.jpg?nf_resize=fit&w=500');">
+                style="background-image:url('/images/galleries/paint/ld3.jpg?nf_resize=fit&w=500');"
+            >
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld3.jpg"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                >
                     <span>Life &amp; Decay 3</span>
                 </a>
             </li>
             <li
-                style="background-image:url('/images/galleries/paint/ld4.jpg?nf_resize=fit&w=500');">
+                style="background-image:url('/images/galleries/paint/ld4.jpg?nf_resize=fit&w=500');"
+            >
                 <a
                     on:click={setLightbox}
                     href="/images/galleries/paint/ld4.jpg"
                     rel="noopener noreferrer"
-                    target="_blank">
+                    target="_blank"
+                >
                     <span>Life &amp; Decay 4</span>
                 </a>
             </li>

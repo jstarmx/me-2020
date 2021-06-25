@@ -55,7 +55,8 @@
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
-            allowfullscreen />
+            allowfullscreen
+        />
     </article>
     <h2>Reflex</h2>
     <article>
@@ -67,7 +68,8 @@
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
-            allowfullscreen />
+            allowfullscreen
+        />
     </article>
     <h2>Banshees</h2>
     <article>
@@ -79,7 +81,8 @@
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
-            allowfullscreen />
+            allowfullscreen
+        />
     </article>
     <h2>2 Artistes; 1 Chair</h2>
     <article>
@@ -91,7 +94,8 @@
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
-            allowfullscreen />
+            allowfullscreen
+        />
     </article>
     <h2>Director of Photography Showreel</h2>
     <article>
@@ -103,7 +107,8 @@
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
-            allowfullscreen />
+            allowfullscreen
+        />
     </article>
     <h2>Turing's Horizon</h2>
     <article>
@@ -115,6 +120,7 @@
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
-            allowfullscreen />
+            allowfullscreen
+        />
     </article>
 </div>
