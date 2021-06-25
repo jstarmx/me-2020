@@ -105,16 +105,23 @@
         background: #282c34;
     }
 
-    .blog :global(.hljs-comment, .hljs-quote) {
+    .blog :global(.hljs-comment),
+    .blog :global(.hljs-quote) {
         color: #8aa1cc;
         font-style: italic;
     }
 
-    .blog :global(.hljs-doctag, .hljs-formula, .hljs-keyword) {
+    .blog :global(.hljs-doctag),
+    .blog :global(.hljs-formula),
+    .blog :global(.hljs-keyword) {
         color: #c678dd;
     }
 
-    .blog :global(.hljs-deletion, .hljs-name, .hljs-section, .hljs-selector-tag, .hljs-subst) {
+    .blog :global(.hljs-deletion),
+    .blog :global(.hljs-name),
+    .blog :global(.hljs-section),
+    .blog :global(.hljs-selector-tag),
+    .blog :global(.hljs-subst) {
         color: #f46c68;
     }
 
@@ -122,21 +129,36 @@
         color: #56b6c2;
     }
 
-    .blog :global(.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string) {
+    .blog :global(.hljs-addition),
+    .blog :global(.hljs-attribute),
+    .blog :global(.hljs-meta-string),
+    .blog :global(.hljs-regexp),
+    .blog :global(.hljs-string) {
         color: #58d0c8;
     }
 
-    .blog :global(.hljs-built_in, .hljs-class .hljs-title) {
+    .blog :global(.hljs-built_in),
+    .blog :global(.hljs-class .hljs-title) {
         color: #c19951;
     }
 
-    .blog
-        :global(.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable) {
+    .blog :global(.hljs-attr),
+    .blog :global(.hljs-number),
+    .blog :global(.hljs-selector-attr),
+    .blog :global(.hljs-selector-class),
+    .blog :global(.hljs-selector-pseudo),
+    .blog :global(.hljs-template-variable),
+    .blog :global(.hljs-type),
+    .blog :global(.hljs-variable) {
         color: #d19a66;
     }
 
-    .blog
-        :global(.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hljs-title) {
+    .blog :global(.hljs-bullet),
+    .blog :global(.hljs-link),
+    .blog :global(.hljs-meta),
+    .blog :global(.hljs-selector-id),
+    .blog :global(.hljs-symbol),
+    .blog :global(.hljs-title) {
         color: #61aeee;
     }
 
