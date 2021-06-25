@@ -24,12 +24,15 @@ export default {
         output: config.client.output(),
         plugins: [
             replace({
+                preventAssignment: true,
                 'process.browser': true,
                 'process.env.NODE_ENV': JSON.stringify(mode),
             }),
             svelte({
-                dev,
-                hydratable: true,
+                compilerOptions: {
+                    dev,
+                    hydratable: true,
+                },
                 emitCss: true,
             }),
             resolve({
@@ -76,12 +79,15 @@ export default {
         output: config.server.output(),
         plugins: [
             replace({
+                preventAssignment: true,
                 'process.browser': false,
                 'process.env.NODE_ENV': JSON.stringify(mode),
             }),
             svelte({
-                generate: 'ssr',
-                dev,
+                compilerOptions: {
+                    generate: 'ssr',
+                    dev,
+                },
             }),
             json(),
             markdown(),
@@ -104,6 +110,7 @@ export default {
         plugins: [
             resolve(),
             replace({
+                preventAssignment: true,
                 'process.browser': true,
                 'process.env.NODE_ENV': JSON.stringify(mode),
             }),
