@@ -1,6 +1,8 @@
 # Redirect domain aliases to primary domain
-https://www.james-starkie.co.uk/* https://www.jstar.mx/:splat 301!
-https://james-starkie.co.uk/* https://www.jstar.mx/:splat 301!
+https://www.james-starkie.co.uk/* https://www.starkie.dev/:splat 301!
+https://james-starkie.co.uk/* https://www.starkie.dev/:splat 301!
+https://www.jstar.mx/* https://www.starkie.dev/:splat 301!
+https://jstar.mx/* https://www.starkie.dev/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://naughty-rosalind-850656.netlify.app/* https://www.jstar.mx/:splat 301!
+https://naughty-rosalind-850656.netlify.app/* https://www.starkie.dev/:splat 301!
